@@ -8,4 +8,11 @@
 # 25 15
 # Вывод:
 # 5 3
-
+def dr(a, b):
+    d = [1]
+    for i in range(min(a, b), 1, -1):
+        if max(a,b) % i == 0 and min(a, b) % i == 0: d.append(i)
+    print(a//max(d), b//max(d))
+a = int(input())
+b = int(input())
+dr(a, b)
